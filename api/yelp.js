@@ -19,8 +19,10 @@ var yelp = {
 					rating: result.rating,
 					name: result.name,
 					phone: result.phone,
-					is_closed: result.is_closed,
-					city: result.location.city
+					address: result.location.address,
+					city: result.location.city,
+					state: result.location.state_code,
+					zipCode: result.location.postal_code
 					};
 				});
  	 		resolve(formattedYelp);
